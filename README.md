@@ -27,8 +27,8 @@ swissjust-lore/
 |---|---|
 | 📘 Facebook | [facebook.com/lorena.liffourrena](https://www.facebook.com/lorena.liffourrena) |
 | 📸 Instagram | [instagram.com/lorenaliffourrena_just](https://www.instagram.com/lorenaliffourrena_just) |
-**| 💬 WhatsApp | +54 9 2966 50-8751 |
-| 🛍️ Tienda | [justargentina.com/tienda](https://viewer.ipaper.io/swiss-just/america/catalogos-web/web-catalogo-argentina/) |
+| 💬 WhatsApp | +54 9 2966 50-8751 |
+| 🛍️ Tienda | [justargentina.com/tienda](https://www.justargentina.com/tienda) |
 
 ## 🚀 Publicar en GitHub Pages
 

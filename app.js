@@ -10,7 +10,7 @@ const CONFIG = {
   waMsg:      'Hola%20Lore!%20Vi%20tu%20bot%20y%20quiero%20consultar%20sobre%20productos%20Swiss%20Just%20%F0%9F%8C%BF',
   fbUrl:      'https://www.facebook.com/lorena.liffourrena',
   igUrl:      'https://www.instagram.com/lorenaliffourrena_just',
-  storeUrl:   'https://www.justargentina.com/tienda',
+  storeUrl:   'https://viewer.ipaper.io/swiss-just/america/catalogos-web/web-catalogo-argentina/',
   evKey:      'swjust_event_v3',
   regKey:     'swjust_regs_v3',
 };
@@ -30,7 +30,7 @@ ${CATALOG.map(p => `[ID:${p.id}] ${p.name} (${p.cat}): ${p.desc}. Tags: ${p.tags
 SOBRE SWISS JUST:
 - Marca suiza fundada en 1930. Productos 100% naturales con aceites esenciales y extractos alpinos.
 - El Óleo 31 es el producto estrella: 31 aceites esenciales puros.
-- Tienda online de Lore: https://www.justargentina.com/tienda
+- Tienda online de Lore: https://viewer.ipaper.io/swiss-just/america/catalogos-web/web-catalogo-argentina/
 
 CONTACTO DE LORE:
 - WhatsApp: +54 9 2966 50-8751
@@ -145,7 +145,7 @@ function handleQR(opt) {
   setTimeout(() => {
     addBotMsg(
       `¿Te interesa alguno? Consultá directamente con <b>Lore</b> 💬<br><br>` +
-      `<a href="https://api.whatsapp.com/send?phone=${CONFIG.waNumber}&text=${CONFIG.waMsg}" target="_blank" rel="noopener" class="link-btn teal">💬 WhatsApp de Lore</a>` +
+      `<a href="https://wa.me/${CONFIG.waNumber}?text=${CONFIG.waMsg}" target="_blank" rel="noopener" class="link-btn teal">💬 WhatsApp de Lore</a>` +
       `&nbsp;&nbsp;<a href="${CONFIG.igUrl}" target="_blank" rel="noopener" class="link-btn purple">📸 Instagram</a>`
     );
   }, 200);
@@ -154,7 +154,7 @@ function handleQR(opt) {
 function showContactMsg() {
   addBotMsg(
     `Para consultas, precios y pedidos, contactá directamente a <b>Lore</b> 🌿<br><br>` +
-    `<a href="https://api.whatsapp.com/send?phone=${CONFIG.waNumber}&text=${CONFIG.waMsg}" target="_blank" rel="noopener" class="link-btn teal">💬 WhatsApp: +54 9 2966 50-8751</a><br><br>` +
+    `<a href="https://wa.me/${CONFIG.waNumber}?text=${CONFIG.waMsg}" target="_blank" rel="noopener" class="link-btn teal">💬 WhatsApp: +54 9 2966 50-8751</a><br><br>` +
     `<a href="${CONFIG.fbUrl}" target="_blank" rel="noopener" style="color:var(--sage);font-weight:500">📘 Facebook: Lorena Liffourrena</a><br>` +
     `<a href="${CONFIG.igUrl}" target="_blank" rel="noopener" style="color:var(--sage);font-weight:500">📸 Instagram: @lorenaliffourrena_just</a><br><br>` +
     `¡Te asesora sin compromiso y con todo el cariño! 🌿`
@@ -222,7 +222,7 @@ async function sendMsg(override) {
     removeTyping(); parseAIResponse(reply);
   } catch(e) {
     removeTyping();
-    addBotMsg(`Disculpá, hubo un problema de conexión. Podés contactar directamente a <b>Lore</b> 💬<br><br><a href="https://api.whatsapp.com/send?phone=${CONFIG.waNumber}&text=${CONFIG.waMsg}" target="_blank" class="link-btn teal">💬 WhatsApp de Lore</a>`);
+    addBotMsg(`Disculpá, hubo un problema de conexión. Podés contactar directamente a <b>Lore</b> 💬<br><br><a href="https://wa.me/${CONFIG.waNumber}?text=${CONFIG.waMsg}" target="_blank" class="link-btn teal">💬 WhatsApp de Lore</a>`);
   }
   isSending = false; $('sendBtn').disabled = false;
 }
@@ -361,7 +361,7 @@ document.addEventListener('click', function(e) {
     const p  = CATALOG.find(x => x.id === id);
     if (p) {
       const msg = encodeURIComponent(`Hola Lore! Me interesa el producto: ${p.name} 🌿`);
-      window.open(`https://api.whatsapp.com/send?phone=${CONFIG.waNumber}&text=${msg}`, '_blank');
+      window.open(`https://wa.me/${CONFIG.waNumber}?text=${msg}`, '_blank');
     }
     return;
   }
