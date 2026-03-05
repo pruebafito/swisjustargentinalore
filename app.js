@@ -316,7 +316,7 @@ function welcome() {
     addBotMsg(
       `¡Hola! Soy <b>Noa</b> 🌿, la asistente de <b>Lore Liffourrena</b>, Consultora oficial Swiss Just Argentina.<br><br>` +
       `Podés preguntarme sobre nuestros productos naturales suizos, o ir directo a la ` +
-      `<a href="${CONFIG.storeUrl}" target="_blank" rel="noopener" style="color:var(--sage);font-weight:500">tienda online de Lore</a> ` +
+      `<a href="${CONFIG.storeUrl}" target="_blank" rel="noopener" style="color:var(--sage);font-weight:500">catálogo de productos</a> ` +
       `para registrarte y comenzar a disfrutar. ¿En qué te puedo ayudar?`
     );
     setTimeout(() => {
