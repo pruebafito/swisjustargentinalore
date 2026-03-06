@@ -12,6 +12,7 @@ const CONFIG = {
   igUrl:      'https://www.instagram.com/lorenaliffourrena_just',
   storeUrl:   'https://www.justargentina.com/tienda',
   catalogUrl: 'https://viewer.ipaper.io/swiss-just/america/catalogos-web/web-catalogo-argentina/',
+  email:      'Liffourrenalorena@gmail.com',
   evKey:      'swjust_event_v3',
   regKey:     'swjust_regs_v3',
 };
@@ -146,7 +147,7 @@ function handleQR(opt) {
   setTimeout(() => {
     addBotMsg(
       `¿Te interesa alguno? Consultá directamente con <b>Lore</b> 💬<br><br>` +
-      `<a href="https://wa.me/${CONFIG.waNumber}?text=${CONFIG.waMsg}" target="_blank" rel="noopener" class="link-btn teal">💬 WhatsApp de Lore</a>` +
+      `<a href="mailto:${CONFIG.email}" class="link-btn teal">✉️ Email de Lore</a>` +
       `&nbsp;&nbsp;<a href="${CONFIG.igUrl}" target="_blank" rel="noopener" class="link-btn purple">📸 Instagram</a>`
     );
   }, 200);
