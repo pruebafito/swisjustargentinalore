@@ -9,7 +9,7 @@ const CONFIG = {
   waNumber:   '5492966508751',
   waMsg:      'Hola%20Lore!%20Vi%20tu%20bot%20y%20quiero%20consultar%20sobre%20productos%20Swiss%20Just%20%F0%9F%8C%BF',
   fbUrl:      'https://www.facebook.com/lorena.liffourrena',
-  igUrl:      'https://www.instagram.com/lorenaliffourrena_just',
+  igUrl:      'https://www.instagram.com/lorena_liffourrena/',
   storeUrl:   'https://www.justargentina.com/tienda',
   catalogUrl: 'https://viewer.ipaper.io/swiss-just/america/catalogos-web/web-catalogo-argentina/',
   email:      'Liffourrenalorena@gmail.com',
@@ -37,7 +37,7 @@ SOBRE SWISS JUST:
 CONTACTO DE LORE:
 - WhatsApp: +54 9 2966 50-8751
 - Facebook: facebook.com/lorena.liffourrena
-- Instagram: @lorenaliffourrena_just
+- Instagram: @lorena_liffourrena
 
 REGLAS:
 1. Siempre español rioplatense, tono cálido.
@@ -158,7 +158,7 @@ function showContactMsg() {
     `Para consultas, precios y pedidos, contactá directamente a <b>Lore</b> 🌿<br><br>` +
     `<a href="https://wa.me/${CONFIG.waNumber}?text=${CONFIG.waMsg}" target="_blank" rel="noopener" class="link-btn teal">💬 WhatsApp: +54 9 2966 50-8751</a><br><br>` +
     `<a href="${CONFIG.fbUrl}" target="_blank" rel="noopener" style="color:var(--sage);font-weight:500">📘 Facebook: Lorena Liffourrena</a><br>` +
-    `<a href="${CONFIG.igUrl}" target="_blank" rel="noopener" style="color:var(--sage);font-weight:500">📸 Instagram: @lorenaliffourrena_just</a><br><br>` +
+    `<a href="${CONFIG.igUrl}" target="_blank" rel="noopener" style="color:var(--sage);font-weight:500">📸 Instagram: @lorena_liffourrena</a><br><br>` +
     `¡Te asesora sin compromiso y con todo el cariño! 🌿`
   );
 }
