@@ -10,7 +10,7 @@ const CONFIG = {
   waMsg:      'Hola%20Lore!%20Vi%20tu%20bot%20y%20quiero%20consultar%20sobre%20productos%20Swiss%20Just%20%F0%9F%8C%BF',
   fbUrl:      'https://www.facebook.com/lorena.liffourrena',
   igUrl:      'https://www.instagram.com/lorena_liffourrena/',
-  storeUrl:   'https://www.justargentina.com/tienda',
+  storeUrl:   'https://www.justargentina.com/lorenaliffourrena',
   catalogUrl: 'https://viewer.ipaper.io/swiss-just/america/catalogos-web/web-catalogo-argentina/',
   email:      'Liffourrenalorena@gmail.com',
   evKey:      'swjust_event_v3',
@@ -32,7 +32,7 @@ ${CATALOG.map(p => `[ID:${p.id}] ${p.name} (${p.cat}): ${p.desc}. Tags: ${p.tags
 SOBRE SWISS JUST:
 - Marca suiza fundada en 1930. Productos 100% naturales con aceites esenciales y extractos alpinos.
 - El Óleo 31 es el producto estrella: 31 aceites esenciales puros.
-- Tienda online de Lore: https://www.justargentina.com/tienda
+- Tienda online de Lore: https://www.justargentina.com/lorenaliffourrena
 
 CONTACTO DE LORE:
 - WhatsApp: +54 9 2966 50-8751
